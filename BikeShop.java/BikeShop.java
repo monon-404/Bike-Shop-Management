@@ -12,7 +12,6 @@ public class BikeShop extends JFrame {
     private JPanel cartItemsPanel;
     private JLabel totalAmountLabel;
 
-    // Dark Theme Colors
     private final Color BG_MAIN = new Color(30, 30, 30);
     private final Color BG_PANEL = new Color(50, 50, 50);
     private final Color ACCENT = new Color(0, 255, 200); 
@@ -27,7 +26,6 @@ public class BikeShop extends JFrame {
         setLayout(new BorderLayout());
         getContentPane().setBackground(BG_MAIN);
 
-        // --- Header ---
         JPanel headerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 40, 20));
         headerPanel.setBackground(BG_MAIN);
         
@@ -37,7 +35,6 @@ public class BikeShop extends JFrame {
         headerPanel.add(titleLbl);
         add(headerPanel, BorderLayout.NORTH);
 
-        // --- Products Grid ---
         Product[] products = {
             new Product("CFMOTO 300 NK", 342000.0, "./Images/bike1.jpg"),
             new Product("Honda CBR 150R", 530000.0, "./Images/bike2.png"),
@@ -274,4 +271,5 @@ public class BikeShop extends JFrame {
         btn.setMargin(new Insets(2, 8, 2, 8));
         btn.setBorder(new LineBorder(Color.GRAY));
     }
+
 }
